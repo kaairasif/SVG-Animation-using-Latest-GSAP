@@ -1,0 +1,172 @@
+body {
+  /* background: #7f7f7f; */
+  color: white;
+  font-family: "Nunito";
+}
+
+svg.hero-svg {
+  position: absolute;
+  z-index: 0;
+  left: -55%;
+  top: -8%;
+  width: 150%;
+}
+
+.content {
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 75%;
+  position: relative;
+  z-index: 1;
+}
+.content h1 {
+  font-size: 1.4em;
+}
+
+.quote-container {
+  display: flex;
+  width: 100%;
+  place-content: center;
+}
+.quote-container .avatar {
+  width: 25px;
+  height: 25px;
+  background: gray;
+  border-radius: 50%;
+}
+.quote-container p {
+  margin: 0.3em 0.5em;
+  font-size: 0.9em;
+}
+
+.cta {
+  margin-top: 3em;
+  display: inline-block;
+  background: #00e472;
+  color: black;
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 0.2em;
+  font-weight: bold;
+}
+
+#template,
+#path {
+  fill: none;
+}
+#template {
+  stroke-width: 5px;
+  stroke: #444;
+}
+#path {
+  stroke: #0ae448;
+  stroke-width: 20px;
+  visibility: hidden;
+}
+#code,
+#value {
+  font-size: 2rem;
+  font-family: monospace;
+}
+#code {
+  color: #777;
+  margin: 20px;
+  position: relative;
+  visibility: hidden;
+}
+#current {
+  display: inline-block;
+  color: white;
+}
+#description {
+  max-width: 530px;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  display: inline-block;
+  text-align: left;
+}
+
+.range-container {
+  margin: 2rem auto 0;
+  text-align: center;
+}
+
+.range {
+  direction: rtl;
+}
+
+.squiggle {
+  --stroke-dashoffset: 420;
+  stroke-dasharray: 450;
+  stroke-dashoffset: var(--stroke-dashoffset);
+}
+
+.counters {
+  color: limegreen;
+  font-size: 100px;
+}
+
+.circ-svg {
+  transform: rotate(270deg);
+}
+.circ-draw {
+  stroke: coral;
+  stroke-width: 10px;
+  fill: #e5e5e5;
+  stroke-dasharray: 1547;
+  stroke-dashoffset: 1547;
+  animation: circAnim 1s ease-in-out forwards;
+}
+
+@keyframes circAnim {
+  /* from {
+    stroke-dashoffset: 1000;
+  } */
+  to {
+    stroke-dashoffset: 50;
+  }
+}
+
+@media screen and (min-width: 840px) {
+  body {
+    font-size: 22px;
+    overflow-x: hidden;
+  }
+
+  .content {
+    text-align: left;
+    width: 80%;
+    margin: 10em auto 0 auto;
+  }
+  .content h1 {
+    width: 50%;
+  }
+
+  svg.hero-svg {
+    left: unset;
+    right: -5%;
+    top: -8%;
+    width: 1200px;
+  }
+
+  .quote-container {
+    display: flex;
+    place-content: unset;
+  }
+  .quote-container p {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  svg.hero-svg {
+    position: absolute;
+    z-index: 0;
+    left: unset;
+    right: -5%;
+    top: -20%;
+    overflow: hidden;
+    width: 1600px;
+  }
+}
