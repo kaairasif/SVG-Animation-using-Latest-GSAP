@@ -30,7 +30,7 @@ ciderProcess.from(".apple-tree path", {
   transformOrigin: "center",
   stagger: {
     each: 0.1,
-    ease: "power2.inOut",
+    ease: "sign.out",
   },
   repeat: -1,
   repeatDelay: 3,
@@ -47,7 +47,7 @@ speedTest.from(".all-path path", {
   transformOrigin: "center",
   stagger: {
     each: 0.2,
-    ease: "bounce.out",
+    ease: "sign.out",
   },
   repeat: -1,
   repeatDelay: 3,

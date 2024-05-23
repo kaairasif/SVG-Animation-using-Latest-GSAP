@@ -170,3 +170,13 @@ svg.hero-svg {
     width: 1600px;
   }
 }
+
+
+.apple-tree-wrap {
+  max-width: 400px;
+  margin: 0 20px;
+}
+.speed-test {
+  max-width: 700px;
+  margin: 0 20px;
+}
